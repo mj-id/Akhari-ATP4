@@ -177,7 +177,8 @@ aside .sidebar li.active a {
   color: var(--light);
 }
 
-aside .sidebar li #bx2 {
+aside .sidebar li #bx2,
+aside .sidebar li #bx3 {
   margin-left: auto;
   transition: all 0.3s ease;
 }

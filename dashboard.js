@@ -15,19 +15,35 @@ sidebar.forEach((item) => {
   });
 });
 
-const dropdownToggle = document.getElementById("btn1");
-const arrow = document.getElementById("bx2");
+const ATdropDown = document.getElementById("btn1");
+const ATarrow = document.getElementById("bx2");
 
-dropdownToggle.addEventListener("click", function () {
+ATdropDown.addEventListener("click", function () {
   const akhariTech = document.getElementById("dropdown");
 
-  arrow.classList.toggle("rotate");
-  if (arrow.classList.contains("rotate")) {
+  ATarrow.classList.toggle("rotate");
+  if (ATarrow.classList.contains("rotate")) {
     console.log(akhariTech + "active");
     akhariTech.classList.add("show");
   } else {
     console.log(akhariTech + "disable");
     akhariTech.classList.remove("show");
+  }
+});
+
+const AEdropDown = document.getElementById("btn2");
+const AEarrow = document.getElementById("bx3");
+
+AEdropDown.addEventListener("click", function () {
+  const akhariEsport = document.getElementById("dropdown2");
+
+  AEarrow.classList.toggle("rotate");
+  if (AEarrow.classList.contains("rotate")) {
+    console.log(akhariEsport + "active");
+    akhariEsport.classList.add("show");
+  } else {
+    console.log(akhariEsport + "disable");
+    akhariEsport.classList.remove("show");
   }
 });
 
